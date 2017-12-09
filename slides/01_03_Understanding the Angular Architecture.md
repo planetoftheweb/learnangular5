@@ -1,18 +1,28 @@
 <!-- .slide: data-state="title" -->
-# RayVeal
-opinionated reveal.js
+# Learn Angular
+Understanding the Angular Scaffold
+
+> > Author Notes:
+Let's take a look at what we get when we install an Angular CLI project. The CLI installs a lot of files and folders, so you'll want to know how it's structured. At the end of the last video, we deleted the folder you created, so we're going to be using the files from my Github repo for this video to make sure we're all working with exactly the same folder. Before you watch the rest of the course, make sure that you've watched the video on `Using the exercises`
 
 ---
 
-## Installing
+## Root Folder
+- `src` folder
+- `dist` folder
+- Configuration files
 
-- Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-- `docs` folder has presentation
-- `slides/demo.md` subfolder has main markdown
+> > Author Notes:
+
+The root is the main folder that is generated when you use the `ng new` command and it should have a couple of folders as well as several files. Now this may look a bit different depending on what commands you've run or the version of the CLI you're using.
+
+- The src folder is probably the most important folder in your project. It's where the main files for your project will live and where you'll be doing most of your development.
+- If you run then ng build command, you'll have an additional folder called dist. It's where the files that you would upload to your server will live.
+- The rest of the files are configuration files for different tools. So you may see here the typical node-modules folder as well as a .gitignore file that you're used to if you've worked with node.js tools before. But you may not recognize some of the other files like the 
 
 ---
 
-## 100% Markdown
+## src Folder
 
 - Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `slides/demo.md`.
 
