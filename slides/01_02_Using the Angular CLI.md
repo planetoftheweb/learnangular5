@@ -1,154 +1,44 @@
 <!-- .slide: data-state="title" -->
-# RayVeal
-opinionated reveal.js
+# Learn Angular
+Understanding the Angular CLI
+
+> > Author Notes:
+Something common in modern frameworks is to provide a quick way to set up your projects and Angular does this using something called the Angular CLI. Let's take a look  at what it is and how it works.
 
 ---
 
-## Installing
+## Angular CLI
 
-- Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-- `docs` folder has presentation
-- `slides/demo.md` subfolder has main markdown
+- Command Line Interface
+- Scaffolds an application
+- Highly opinionated
+- Requirements
 
----
-
-## 100% Markdown
-
-- Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `slides/demo.md`.
-
-- It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
-
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
+> > Author Notes:
+- A CLI is a commmand line interface, or an application that you access through a terminal to perform a variety of common tasks.
+- The Angular CLI is mainly used to scaffold an application. That means creating an application with common settings quickly using a simple command.
+- Angular's CLI is highly opinionated, so the basic scaffolding command is going to set up an applicationn that not be the way you would set up your own application, but it's pretty common to use it to get started and I'll walk you through what it does and how to customize things.
+- Using the CLI requires a separate installation and you have to make sure you've already installed NodeJS as well as Git. Within Node.js, you'll also be using npm or the Node Package Manager, which means you should be familiar with those technologies.
 
 ---
 
-## Persistent Navigation
+## Main CLI Commands
 
-<small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `ctrl-t` key. To modify, look for the following code (delete it if you don't need it)</small>
+- `ng new NAME`
+- `ng serve`
+- `ng build`
+- `ng g TYPE NAME`
 
-```
-<footer class="footer">
-  <div class="persistent">
-    <strong>Slides:</strong> <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull; <strong>Contact:</strong>
-    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a> | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> | <a href="http://github.com/planetoftheweb">github</a>
-  </div>
-  <div class="smaller">Use arrows to navigate, esc for overview</div>
-</footer>
-```
+> > Author Notes:
+The CLI has a several commands you can use to create, serve, build, generate components and much more. They all start with the ng prefix. Let's take a look at the most common commands, some of which we'll be using on this course.
+
+- The first command you'll get used to using is the ng new command, it allows you to create also called scaffold a new application. It creates all of the files you need for a basic project and then some. We'll cover that file structure in the next video. You use it by typing in ng new and then the name of the project.
+
+- After ng new, you'll probably want to see what your application looks like while in development. For that you can use ng serve to run the application in development mode. This will use webpack, which is a tool that processes the code in your application and run a temporary live server that will auto update as you make changes to your project.
+
+- Once you're done developing your application, you'll probably want to publish it to a server. The `ng build` will command will process your files and get them ready for deploying. This is a slightly different process than using ng serve, because it produces files that you can push or pass onto a server.
+
+- Finally  the Angular CLI provides a set of commands that will automatically generate different pieces of Angular code for you. The `ng g` command can be used with different types to generate the code for things like components, types and other pieces that you can use in your application.
 
 
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
-
----
-
-## Multiple slides
-
-You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
----
-
-## Sidebar Menu
-
-Press the `ctrl-m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slides. There is also an [index.txt](slides/index.txt) file in the slides menu, where you can add other slides you want to feature in your menu.
-
----
-
-## Standalone Folder
-Presentations live in a docs folder within the main project, simply upload the docs folder to a server and change the name if you want. It's self contained. It's also easy to add as documentation using Github Pages.
-
----
-
-## Fragments
-
-1. Are on by default
-2. You can write HTML lists
-  - if you don't want them
-
----
-
-  ## Code options
-
-- [Bootstrap](http://getbootstrap.com)-like colors for code
-- <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-- <a class="tooltip" href="#">`tooltips`<span>for overlay explanations</span></a> on rollover
-
----
-
-<!-- .slide: data-state="hasicon" -->
-
-## <i class="fa fa-html5"></i> Has Icon
-
-- Template with an icon
-- Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
-- &lt;!-- .slide: data-state="hasicon" --&gt;
-
----
-
-# Background Video
-
-<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" -->
-
-<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
-
-> > Note: You also have the option of creating video as a background using regular reveal.js tags.
-
----
-
-<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
-
-## Background with an image
-And some text, small shadow...
-
-<small>&lt;!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" --&gt;</small>
-
----
-
-## Here's some code
-
-```javascript
-var electron = require('electron');
-var BrowserWindow = electron.BrowserWindow;
-var app = electron.app;
-
-app.on('ready', function() {
-  var appWindow;
-  appWindow = new BrowserWindow();
-  appWindow.loadURL('http://raybo.org');
-});
-```
-<!-- .element: data-trim="true" contenteditable="true" -->
-
-Syntax highlighted, editable by default
-
----
-
-## Embedded Code
-<small>Here's a sample of an embeded CodePen. Use an iframe.</small>
-
-<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-## Tables
-
-Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
-
-| |  Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
-|---|---|---|---|---|
-| **Container**	| Auto | 750px | 970px | 1170px |
-| **Size**	| .col-xs- | .col-sm- | .col-md- | .col-lg- |
-| **Column width** | Auto | ~62px | ~81px | ~97px |
-
----
-<!-- .slide: data-state="circles" -->
-
-# Circles
-
-- one
-- two
-- three
-- four
-- five
-- just list items
-
-&lt;!-- .slide: data-state="circles" --&gt;
+Let's go ahead an install the CLI and then try some of these commands.
