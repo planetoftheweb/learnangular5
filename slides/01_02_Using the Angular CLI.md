@@ -15,7 +15,7 @@ Something common in modern frameworks is to provide a quick way to set up your p
 - Requirements
 
 > > Author Notes:
-- A CLI is a commmand line interface, or an application that you access through a terminal to perform a variety of common tasks.
+- A CLI is a commmand line interface, or a set of tools that you access using a terminal application and allow you to perform a variety of common tasks.
 - The Angular CLI is mainly used to scaffold an application. That means creating an application with common settings quickly using a simple command.
 - Angular's CLI is highly opinionated, so the basic scaffolding command is going to set up an application that not be the way you would set up your own application, but it's pretty common to use it to get started and I'll walk you through what it does and how to customize things.
 - Using the CLI requires a separate installation and you have to make sure you've already installed NodeJS as well as Git. Within Node.js, you'll also be using npm or the Node Package Manager, which means you should be familiar with those technologies.
