@@ -1,3 +1,5 @@
 01_01_What is Angular
 01_02_Using the Angular CLI
-01_03_Understanding the Angular Architecture
+01_03_Understanding Angular CLI Projects
+01_04_Using CLI Generated Components
+01_05_Installing Additional Frameworks
