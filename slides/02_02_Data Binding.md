@@ -13,6 +13,10 @@ Angular lets you use the data in your components inside templates. That's known 
 - `constructor()` method
 - Declaring var types
 
+---
+## 
+
+
 > > Author Notes:
 - Your components interact with templates in a variety of ways, one of the most common is through the use of expressions. This involves making objects declared in your components available in your templates using curly braces. The content in the curly braces can be simple in the case of when we just output a variable or more complex.
 
