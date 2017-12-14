@@ -29,4 +29,6 @@ styleUrls: ['./app.component.css']
 ```
 
 ## Conclusion
-There's quite a bit of stuff happening here, but once you understand how the CLI creates items, then you'll be on your way to creating applications you can do real work with.
+Angular templates are pretty easy to work with, especially if you're familiar with how ES6 templates work.
+
+Because Angular uses Webpack to manage how your code gets generated, it doesn't really matter if you'd rather keep everything within the component code, or on separate files.
