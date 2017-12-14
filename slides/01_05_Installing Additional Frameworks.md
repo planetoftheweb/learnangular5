@@ -13,9 +13,11 @@ Adding frameworks to angular is pretty easy, you just have to know where to do i
 - `styles` && `scripts`
 
 > > Author Notes:
+
+```
 `npm install jquery --save-dev`
 `npm install bootstrap@4.0.0-beta.2 --save-dev`
-
+```
 
 Updates to .angular-cli.json
 
