@@ -14,7 +14,7 @@ Angular lets you use the data in your components inside templates. That's known 
 - Declaring var types
 
 ---
-## 
+##
 
 
 > > Author Notes:
@@ -48,9 +48,7 @@ Let's go ahead and add this to our template
   <div class="form-label"><strong>For:</strong> {{ query }}</div>
 ```
 
-So, that's pretty good for simple data. Let's take a look at what it takes to do a more complex data object. We can do that using directives...or commands inside our templates.
-
-- []
+So, that's pretty good for simple data. Let's take a look at what it takes to do a more complex data object. We can do that using directives...or commands inside our templates. We'll declare a new variable called artists to hold our values.
 
 ```
 query: string;
