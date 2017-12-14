@@ -4,3 +4,4 @@
 01_04_Using CLI Generated Components
 01_05_Installing Additional Frameworks
 02_01_Understanding Angular Templating
+02_02_Data Binding
