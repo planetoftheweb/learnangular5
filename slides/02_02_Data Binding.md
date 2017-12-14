@@ -1,6 +1,6 @@
 <!-- .slide: data-state="title" -->
 # Learn Angular
-Basic Binding
+Data Binding
 
 > > Author Notes:
 Angular lets you use the data in your components inside templates. That's known as binding.
