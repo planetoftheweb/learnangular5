@@ -21,5 +21,12 @@ Update background of body
 <body class="bg-light">
 ```
 
+Delete app.component.spect.ts
+Delete app.component.css
+Remove this code
+```
+styleUrls: ['./app.component.css']
+```
+
 ## Conclusion
 There's quite a bit of stuff happening here, but once you understand how the CLI creates items, then you'll be on your way to creating applications you can do real work with.
