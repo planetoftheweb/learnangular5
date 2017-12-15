@@ -5,3 +5,5 @@
 01_05_Installing Additional Frameworks
 02_01_Understanding Angular Templating
 02_02_Data Binding
+02_03_Events
+02_04_Properties
