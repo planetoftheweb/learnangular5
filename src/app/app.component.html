@@ -4,7 +4,7 @@
       <div class="card-body">
         <h3 class="mb-0">Artist Directory</h3>
         <div class="form-group">
-          <div class="form-label"><strong>For:</strong>
+          <div class="form-label" *ngIf="query"><strong>For:</strong>
             {{ query }}
           </div>
           <input class="form-control mt-2" type="text">
@@ -18,7 +18,8 @@
       <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
-            *ngFor="let artist of artists">
+            *ngFor="let artist of artists"
+            (click)="showArtist(artist)">
               <div class="media">
                 <div class="media-body align-self-center">
                   <h5 class="m-0">{{ artist.name }}</h5>
