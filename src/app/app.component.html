@@ -7,7 +7,8 @@
           <div class="form-label" *ngIf="query"><strong>For:</strong>
             {{ query }}
           </div>
-          <input class="form-control mt-2" type="text">
+          <input class="form-control mt-2" type="text"
+            [(ngModel)]="query">
         </div><!-- form-group -->
       </div><!-- card-body -->
     </div><!-- card -->
