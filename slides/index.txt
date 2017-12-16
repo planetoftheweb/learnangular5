@@ -7,3 +7,4 @@
 02_02_Data Binding
 02_03_Events
 02_04_Properties
+02_05_Two Way Binding
