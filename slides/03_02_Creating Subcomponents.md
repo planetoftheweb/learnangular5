@@ -18,7 +18,7 @@ In a regular application, it's better to create more than one component to separ
 
 - In order to make the two components communicate with each other, we can use properties, sometimes called props...which use the square brackets to pass along something from the main component to the sub-component.
 
-- There's some other wiring that we'll need to do including adding an inputs field to our sub-component and importing between files.
+- There's some other wiring that we'll need to do including adding an inputs field to our sub-component and importing between the files.
 
 ## Conclusion
 Separating the functionality of your application makes working with components easier to update and helps you build applications that are more efficient.
