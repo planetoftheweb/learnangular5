@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { ArtistItemsComponent } from './artist-items/artist-items.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArtistItemsComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
