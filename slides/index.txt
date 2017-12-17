@@ -9,3 +9,5 @@
 02_04_Properties
 02_05_Two Way Binding
 03_01_Lifecycle Methods
+03_02_Creating Subcomponents
+03_03_Filtering Content
