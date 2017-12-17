@@ -17,10 +17,10 @@
   <div class="position-absolute container" style="left: 0; z-index:10">
     <div class="row justify-content-center">
       <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
-        <div class="list-group">
+        <div class="list-group" *ngIf="query">
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
             *ngFor="let artist of (artists | searchArtists: query)"
-            (click)="showArtist(artist)"
+            (click)="showArtist(artist); query=''"
             [style.backgroundColor]="artist.highlight ? '#EEE' : '#FFF'">
             <app-artist-items [artist]="artist" ></app-artist-items>
           </a><!-- link -->
