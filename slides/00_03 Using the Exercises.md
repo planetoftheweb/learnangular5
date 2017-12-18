@@ -35,6 +35,4 @@ If you want to watch a video at the beginning of `Chapter 1`, and it's the `03` 
 
 If you've made some modifications to files when you do a git checkout command, you can issue a git stash command before, so that it clears out any of the changes you have made. Now let's go ahead and checkout the master branch again.
 
-Unless I say so in the video, I'll start each video in the course with the `ng build` command already running in the background, and the code running inside our editor as well as a copy of page opened up in a browser window.
-
-Now that we're ready to get going, let's get started building our application.
+This course requires some additional installations go get things going, which I explain the in the rest of this chapter, so make sure that you go watch the rest of this chapter before you keep going.
