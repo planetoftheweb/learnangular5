@@ -1,154 +1,41 @@
 <!-- .slide: data-state="title" -->
-# RayVeal
-opinionated reveal.js
+# Learn Angular
+What is Angular?
+
+> > Author Notes: Before we get started, let's take a  quick look at what Angular is and what we'll be building in this course.
 
 ---
 
-## Installing
+## Angular
 
-- Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-- `docs` folder has presentation
-- `slides/demo.md` subfolder has main markdown
+- App Framework
+- Two versions
+- Component Based
+- Modular
 
----
+> > Author Notes: Angular is an application framework, which means a method for structuring your code that makes it easier to build application using web technologies.
 
-## 100% Markdown
+- There are two versions of the Angular framework. Angular 1 also known as AngularJS and this version of angular, which means anything after angular 1, which can be anything greater than angular 2. As of this video, Angular is on Angular 5.
 
-- Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `slides/demo.md`.
+- Angular...not AngularJS is a component based framework, which means that the main way you build code is by creating smaller pieces of code and then putting them together. Each piece can contain it's own scripts, templates and css and can talk to other components.
 
-- It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
-
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
-
----
-
-## Persistent Navigation
-
-<small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `ctrl-t` key. To modify, look for the following code (delete it if you don't need it)</small>
-
-```
-<footer class="footer">
-  <div class="persistent">
-    <strong>Slides:</strong> <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull; <strong>Contact:</strong>
-    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a> | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> | <a href="http://github.com/planetoftheweb">github</a>
-  </div>
-  <div class="smaller">Use arrows to navigate, esc for overview</div>
-</footer>
-```
-
-
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
+- In that way, Angular is modular, and that means that you don't just build small components yourself, but that in order to use different features of the framework you load up only the components you need. That makes this framework fast and efficient.
 
 ---
 
-## Multiple slides
+## Features
 
-You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
----
+- Data Binding
+- Templates
+- CLI
 
-## Sidebar Menu
+> > Author Notes: One of the key features of the framework is something called data-binding. This involves learning how to connect your templates, which are sometimes called models, to your information, which is sometimes called models or data.
 
-Press the `ctrl-m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slides. There is also an [index.txt](slides/index.txt) file in the slides menu, where you can add other slides you want to feature in your menu.
+Angular has a rich template system that looks like HTML with some additional formats for attributes and even tags that you build and define yourself. It's pretty easy to pick up and work with.
 
----
+Making this connections manually can be challenging, so Angular provides a CLI or command line interface. This is a little application that you install and load with your terminal that makes it easier to install and connect your different components. In the rest of this chapter, we'll take a look at how the CLI works.
 
-## Standalone Folder
-Presentations live in a docs folder within the main project, simply upload the docs folder to a server and change the name if you want. It's self contained. It's also easy to add as documentation using Github Pages.
 
----
+Let's take a quick look at what we're going to be building.
 
-## Fragments
-
-1. Are on by default
-2. You can write HTML lists
-  - if you don't want them
-
----
-
-  ## Code options
-
-- [Bootstrap](http://getbootstrap.com)-like colors for code
-- <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-- <a class="tooltip" href="#">`tooltips`<span>for overlay explanations</span></a> on rollover
-
----
-
-<!-- .slide: data-state="hasicon" -->
-
-## <i class="fa fa-html5"></i> Has Icon
-
-- Template with an icon
-- Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
-- &lt;!-- .slide: data-state="hasicon" --&gt;
-
----
-
-# Background Video
-
-<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" -->
-
-<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
-
-> > Note: You also have the option of creating video as a background using regular reveal.js tags.
-
----
-
-<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
-
-## Background with an image
-And some text, small shadow...
-
-<small>&lt;!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" --&gt;</small>
-
----
-
-## Here's some code
-
-```javascript
-var electron = require('electron');
-var BrowserWindow = electron.BrowserWindow;
-var app = electron.app;
-
-app.on('ready', function() {
-  var appWindow;
-  appWindow = new BrowserWindow();
-  appWindow.loadURL('http://raybo.org');
-});
-```
-<!-- .element: data-trim="true" contenteditable="true" -->
-
-Syntax highlighted, editable by default
-
----
-
-## Embedded Code
-<small>Here's a sample of an embeded CodePen. Use an iframe.</small>
-
-<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-## Tables
-
-Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
-
-| |  Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
-|---|---|---|---|---|
-| **Container**	| Auto | 750px | 970px | 1170px |
-| **Size**	| .col-xs- | .col-sm- | .col-md- | .col-lg- |
-| **Column width** | Auto | ~62px | ~81px | ~97px |
-
----
-<!-- .slide: data-state="circles" -->
-
-# Circles
-
-- one
-- two
-- three
-- four
-- five
-- just list items
-
-&lt;!-- .slide: data-state="circles" --&gt;
+This is a pretty simple, but practical project, a directory search application that will help you practice the core principles of Angular and it's something you'll probably use in a lot of projects...a dynamic live search application. In building this application, we'll learn all about the CLI, components, the templating system and cross-component communication. So if you're ready to get started, we'll take a look at the CLI in the next video.

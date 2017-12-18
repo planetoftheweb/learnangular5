@@ -11,3 +11,4 @@
 03_01_Lifecycle Methods
 03_02_Creating Subcomponents
 03_03_Filtering Content
+03_04_Additional Sub-components
