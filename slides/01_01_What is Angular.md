@@ -2,7 +2,7 @@
 # Learn Angular
 What is Angular?
 
-> > Author Notes: Before we get started, let's take a  quick look at what Angular is and what we'll be building in this course.
+> > Author Notes: Before we get started, let's take a  quick look at what Angular is so you'll get an idea of what you'll be learning in this course.
 
 ---
 
@@ -35,7 +35,4 @@ Angular has a rich template system that looks like HTML with some additional for
 
 Making this connections manually can be challenging, so Angular provides a CLI or command line interface. This is a little application that you install and load with your terminal that makes it easier to install and connect your different components. In the rest of this chapter, we'll take a look at how the CLI works.
 
-
-Let's take a quick look at what we're going to be building.
-
-This is a pretty simple, but practical project, a directory search application that will help you practice the core principles of Angular and it's something you'll probably use in a lot of projects...a dynamic live search application. In building this application, we'll learn all about the CLI, components, the templating system and cross-component communication. So if you're ready to get started, we'll take a look at the CLI in the next video.
+If you're ready to get started, we'll take a look at the CLI in the next video.
