@@ -1,6 +1,6 @@
 <!-- .slide: data-state="title" -->
 # Learn Angular
-What is Angular?
+What Is Angular?
 
 > > Author Notes: Before we get started, let's take a  quick look at what Angular is so you'll get an idea of what you'll be learning in this course.
 
@@ -8,9 +8,9 @@ What is Angular?
 
 ## Angular
 
-- App Framework
+- App framework
 - Two versions
-- Component Based
+- Component based
 - Modular
 
 > > Author Notes: Angular is an application framework, which means a method for structuring your code that makes it easier to build application using web technologies.
@@ -25,7 +25,7 @@ What is Angular?
 
 ## Features
 
-- Data Binding
+- Data binding
 - Templates
 - CLI
 
