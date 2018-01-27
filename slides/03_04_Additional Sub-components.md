@@ -1,6 +1,6 @@
 <!-- .slide: data-state="title" -->
 # Learn Angular
-Filtering with Pipes
+Filtering With Pipes
 
 > > Author Notes:
 In order to help us perform our search, we're going to need to learn about pipes. Angular has some built in pipes, but they're sort of lame, for anything substantial, you're going to need to learn to build your own.
