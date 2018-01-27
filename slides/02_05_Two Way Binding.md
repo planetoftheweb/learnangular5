@@ -1,13 +1,13 @@
 <!-- .slide: data-state="title" -->
 # Learn Angular
-Two-way Binding
+Two-way binding
 
 > > Author Notes:
 You already know how to bind an event to your component and also how to use a property to modify an HTML element. Angular provides a way to do both at the same time. This technique is known as two way data binding.
 
 ---
 
-## Two Way Data Binding
+## Two-way Data Binding
 - [( ngModel )]
 - [( ngControl )]
 - Additional imports
