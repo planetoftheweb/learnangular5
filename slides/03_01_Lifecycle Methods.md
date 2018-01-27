@@ -7,7 +7,7 @@ In order to load external data, we need to use something called a Lifecycle Meth
 
 ---
 
-## Two Way Data Binding
+## Two-way Data Binding
 - `onInit`
 - Additional imports
 - Subscribe to observable
