@@ -9,7 +9,7 @@ Something common in modern frameworks is to provide a quick way to set up your p
 
 ## Angular CLI
 
-- Command Line Interface
+- Command line interface
 - Scaffolds an application
 - Highly opinionated
 - Requirements
